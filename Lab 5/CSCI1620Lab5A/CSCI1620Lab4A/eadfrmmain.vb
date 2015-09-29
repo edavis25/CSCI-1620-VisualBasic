@@ -57,12 +57,8 @@ Public Class eadfrmmain
             ItemAmountDecimal = QuantityInteger * PriceDecimal
             SubtotalDecimal = SubtotalDecimal + ItemAmountDecimal
 
-            ' If test to check and add Tax if necessary. Set value for "TaxDecimal" variable.
-            If TaxCheckBox.Checked Then
-                TaxDecimal = SubtotalDecimal * TAX_RATE_DECIMAL
-            Else
-                TaxDecimal = 0
-            End If
+            ' Call method for tax calculation and determine amount of Tax
+            TaxDecimal = FindTax(SubtotalDecimal)
 
             ' Calculate and set value for "TotalDecimal".
             TotalDecimal = SubtotalDecimal + TaxDecimal
@@ -88,6 +84,19 @@ Public Class eadfrmmain
             End With
         End Try
     End Sub
+
+    Private Function FindTax(ByVal AmountDecimal As Decimal) As Decimal
+        ' Function to take an amount given and then calculate the amount of tax
+        ' If test checks and add Tax if necessary.
+
+        If TaxCheckBox.Checked Then
+            AmountDecimal = AmountDecimal * TAX_RATE_DECIMAL
+        Else
+            AmountDecimal = 0
+        End If
+
+        Return (AmountDecimal)
+    End Function
 
     Private Sub ClearButton_Click(sender As Object, e As EventArgs) Handles ClearButton.Click, ClearItemToolStripMenuItem.Click
         'Clear the user's input quantity data and coffee selection.
