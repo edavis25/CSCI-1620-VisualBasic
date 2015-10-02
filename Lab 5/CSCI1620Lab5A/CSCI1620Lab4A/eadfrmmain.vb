@@ -1,6 +1,10 @@
 ﻿' Eric Davis
-' Lab 4A - Chapter 4 Hands-On
+' Lab 5A - Chapter 5 Hands-On
 ' CSCI 1620 - Autumn 2015
+
+' Description:
+'   Tweaked version of Lab 4A. This lab moves some of the buttons into menu items,
+'   puts the calculation for tax into a procedure, and adds a few new dialog boxes.
 
 Public Class eadfrmmain
 
