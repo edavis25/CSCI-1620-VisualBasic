@@ -59,6 +59,8 @@ Partial Class eadfrmmain
         Me.CToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FontDialog1 = New System.Windows.Forms.FontDialog()
+        Me.ColorDialog1 = New System.Windows.Forms.ColorDialog()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -92,7 +94,7 @@ Partial Class eadfrmmain
         Me.GroupBox2.Location = New System.Drawing.Point(203, 22)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(142, 136)
-        Me.GroupBox2.TabIndex = 7
+        Me.GroupBox2.TabIndex = 2
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Coffee Selections"
         Me.ToolTip1.SetToolTip(Me.GroupBox2, "Select a Type of Coffee")
@@ -158,7 +160,7 @@ Partial Class eadfrmmain
         Me.ItemAmountTextBox.Name = "ItemAmountTextBox"
         Me.ItemAmountTextBox.ReadOnly = True
         Me.ItemAmountTextBox.Size = New System.Drawing.Size(68, 20)
-        Me.ItemAmountTextBox.TabIndex = 6
+        Me.ItemAmountTextBox.TabIndex = 7
         Me.ItemAmountTextBox.TabStop = False
         Me.ToolTip1.SetToolTip(Me.ItemAmountTextBox, "Cost of Item Selected")
         '
@@ -168,7 +170,7 @@ Partial Class eadfrmmain
         Me.Label2.Location = New System.Drawing.Point(25, 141)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(66, 13)
-        Me.Label2.TabIndex = 5
+        Me.Label2.TabIndex = 6
         Me.Label2.Text = "Item Amount"
         '
         'ClearButton
@@ -177,7 +179,7 @@ Partial Class eadfrmmain
         Me.ClearButton.Location = New System.Drawing.Point(90, 78)
         Me.ClearButton.Name = "ClearButton"
         Me.ClearButton.Size = New System.Drawing.Size(75, 41)
-        Me.ClearButton.TabIndex = 4
+        Me.ClearButton.TabIndex = 5
         Me.ClearButton.Text = "C&lear for Next Item"
         Me.ToolTip1.SetToolTip(Me.ClearButton, "Clears Order Selection")
         Me.ClearButton.UseVisualStyleBackColor = True
@@ -187,7 +189,7 @@ Partial Class eadfrmmain
         Me.CalculateButton.Location = New System.Drawing.Point(9, 78)
         Me.CalculateButton.Name = "CalculateButton"
         Me.CalculateButton.Size = New System.Drawing.Size(75, 41)
-        Me.CalculateButton.TabIndex = 3
+        Me.CalculateButton.TabIndex = 4
         Me.CalculateButton.Text = "&Calculate Selection"
         Me.ToolTip1.SetToolTip(Me.CalculateButton, "Calculate Price of Current Selection")
         Me.CalculateButton.UseVisualStyleBackColor = True
@@ -198,7 +200,7 @@ Partial Class eadfrmmain
         Me.TaxCheckBox.Location = New System.Drawing.Point(41, 51)
         Me.TaxCheckBox.Name = "TaxCheckBox"
         Me.TaxCheckBox.Size = New System.Drawing.Size(72, 17)
-        Me.TaxCheckBox.TabIndex = 2
+        Me.TaxCheckBox.TabIndex = 3
         Me.TaxCheckBox.Text = "Ta&keout?"
         Me.ToolTip1.SetToolTip(Me.TaxCheckBox, "Check For Takeout Orders")
         Me.TaxCheckBox.UseVisualStyleBackColor = True
@@ -311,24 +313,24 @@ Partial Class eadfrmmain
         '
         Me.NewOrderToolStripMenuItem.Enabled = False
         Me.NewOrderToolStripMenuItem.Name = "NewOrderToolStripMenuItem"
-        Me.NewOrderToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
+        Me.NewOrderToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.NewOrderToolStripMenuItem.Text = "&New Order"
         '
         'SummaryToolStripMenuItem
         '
         Me.SummaryToolStripMenuItem.Name = "SummaryToolStripMenuItem"
-        Me.SummaryToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
+        Me.SummaryToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.SummaryToolStripMenuItem.Text = "&Summary"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(128, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(149, 6)
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ExitToolStripMenuItem.Text = "E&xit"
         '
         'EditToolStripMenuItem
@@ -441,5 +443,7 @@ Partial Class eadfrmmain
     Friend WithEvents CToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents HelpToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AboutToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents FontDialog1 As System.Windows.Forms.FontDialog
+    Friend WithEvents ColorDialog1 As System.Windows.Forms.ColorDialog
 
 End Class

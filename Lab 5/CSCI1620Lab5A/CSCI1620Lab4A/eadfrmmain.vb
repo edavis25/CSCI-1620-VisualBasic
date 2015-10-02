@@ -190,10 +190,44 @@ Public Class eadfrmmain
 
     End Sub
 
-    Private Sub ExitButton_Click(sender As Object, e As EventArgs)
+    Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
         Close()
     End Sub
 
-    
+    Private Sub FontToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FontToolStripMenuItem.Click
+        ' Allows user to change the font of the summary totals.
+        ' FontDialog1 can be seen in component tray
+        With FontDialog1
+            .Font = SubTotalTextBox.Font
+            .ShowDialog()
+            SubTotalTextBox.Font = .Font
+            TaxTextBox.Font = .Font
+            TotalTextBox.Font = .Font
+        End With
+    End Sub
 
+    Private Sub CToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CToolStripMenuItem.Click
+        ' Allows user to select new color for the summary totals
+        ' ColorDialog1 box can be seen in component tray
+        With ColorDialog1
+            .Color = SubTotalTextBox.ForeColor
+            .ShowDialog()
+            SubTotalTextBox.ForeColor = .Color
+            TaxTextBox.ForeColor = .Color
+            TotalTextBox.ForeColor = .Color
+        End With
+        SubTotalTextBox.BackColor = SubTotalTextBox.BackColor    '<-- This is the extra code given to make
+        TaxTextBox.BackColor = TaxTextBox.BackColor              ' the color change work w/ read-only textbox. 
+        TotalTextBox.BackColor = TotalTextBox.BackColor
+    End Sub
+
+    Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
+        ' Display an About message box.  
+        ' Sets the text into a variable for cleanliness.
+        Dim MessageString As String
+
+        MessageString = "R 'n R Billing" & Environment.NewLine & Environment.NewLine & _
+            "Programmed By: Eric A Davis"
+        MessageBox.Show(MessageString, "About R 'n R Billing", MessageBoxButtons.OK, MessageBoxIcon.Information)
+    End Sub
 End Class
