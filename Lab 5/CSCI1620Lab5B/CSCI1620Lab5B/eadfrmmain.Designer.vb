@@ -29,16 +29,16 @@ Partial Class eadfrmmain
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ClearToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.FontToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ColorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.NameLabel = New System.Windows.Forms.Label()
-        Me.WeeklySalesLabel = New System.Windows.Forms.Label()
-        Me.NameTextBox = New System.Windows.Forms.TextBox()
         Me.WeeklySalesTextBox = New System.Windows.Forms.TextBox()
+        Me.NameTextBox = New System.Windows.Forms.TextBox()
+        Me.WeeklySalesLabel = New System.Windows.Forms.Label()
+        Me.NameLabel = New System.Windows.Forms.Label()
         Me.TotalPayLabel = New System.Windows.Forms.Label()
         Me.CommissionLabel = New System.Windows.Forms.Label()
         Me.TotalPayTextBox = New System.Windows.Forms.TextBox()
@@ -93,8 +93,25 @@ Partial Class eadfrmmain
         'ClearToolStripMenuItem
         '
         Me.ClearToolStripMenuItem.Name = "ClearToolStripMenuItem"
-        Me.ClearToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ClearToolStripMenuItem.Size = New System.Drawing.Size(112, 22)
         Me.ClearToolStripMenuItem.Text = "&Clear"
+        '
+        'ToolStripSeparator1
+        '
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(109, 6)
+        '
+        'FontToolStripMenuItem
+        '
+        Me.FontToolStripMenuItem.Name = "FontToolStripMenuItem"
+        Me.FontToolStripMenuItem.Size = New System.Drawing.Size(112, 22)
+        Me.FontToolStripMenuItem.Text = "&Font..."
+        '
+        'ColorToolStripMenuItem
+        '
+        Me.ColorToolStripMenuItem.Name = "ColorToolStripMenuItem"
+        Me.ColorToolStripMenuItem.Size = New System.Drawing.Size(112, 22)
+        Me.ColorToolStripMenuItem.Text = "C&olor..."
         '
         'HelpToolStripMenuItem
         '
@@ -103,27 +120,10 @@ Partial Class eadfrmmain
         Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
         Me.HelpToolStripMenuItem.Text = "&Help"
         '
-        'ToolStripSeparator1
-        '
-        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(149, 6)
-        '
-        'FontToolStripMenuItem
-        '
-        Me.FontToolStripMenuItem.Name = "FontToolStripMenuItem"
-        Me.FontToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.FontToolStripMenuItem.Text = "&Font..."
-        '
-        'ColorToolStripMenuItem
-        '
-        Me.ColorToolStripMenuItem.Name = "ColorToolStripMenuItem"
-        Me.ColorToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.ColorToolStripMenuItem.Text = "C&olor..."
-        '
         'AboutToolStripMenuItem
         '
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(107, 22)
         Me.AboutToolStripMenuItem.Text = "&About"
         '
         'GroupBox1
@@ -138,6 +138,29 @@ Partial Class eadfrmmain
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         '
+        'WeeklySalesTextBox
+        '
+        Me.WeeklySalesTextBox.Location = New System.Drawing.Point(144, 43)
+        Me.WeeklySalesTextBox.Name = "WeeklySalesTextBox"
+        Me.WeeklySalesTextBox.Size = New System.Drawing.Size(95, 20)
+        Me.WeeklySalesTextBox.TabIndex = 3
+        '
+        'NameTextBox
+        '
+        Me.NameTextBox.Location = New System.Drawing.Point(144, 13)
+        Me.NameTextBox.Name = "NameTextBox"
+        Me.NameTextBox.Size = New System.Drawing.Size(95, 20)
+        Me.NameTextBox.TabIndex = 1
+        '
+        'WeeklySalesLabel
+        '
+        Me.WeeklySalesLabel.AutoSize = True
+        Me.WeeklySalesLabel.Location = New System.Drawing.Point(56, 46)
+        Me.WeeklySalesLabel.Name = "WeeklySalesLabel"
+        Me.WeeklySalesLabel.Size = New System.Drawing.Size(72, 13)
+        Me.WeeklySalesLabel.TabIndex = 2
+        Me.WeeklySalesLabel.Text = "Weekly &Sales"
+        '
         'NameLabel
         '
         Me.NameLabel.AutoSize = True
@@ -146,29 +169,6 @@ Partial Class eadfrmmain
         Me.NameLabel.Size = New System.Drawing.Size(103, 13)
         Me.NameLabel.TabIndex = 0
         Me.NameLabel.Text = "Salesperson's &Name"
-        '
-        'WeeklySalesLabel
-        '
-        Me.WeeklySalesLabel.AutoSize = True
-        Me.WeeklySalesLabel.Location = New System.Drawing.Point(56, 46)
-        Me.WeeklySalesLabel.Name = "WeeklySalesLabel"
-        Me.WeeklySalesLabel.Size = New System.Drawing.Size(72, 13)
-        Me.WeeklySalesLabel.TabIndex = 1
-        Me.WeeklySalesLabel.Text = "Weekly &Sales"
-        '
-        'NameTextBox
-        '
-        Me.NameTextBox.Location = New System.Drawing.Point(144, 13)
-        Me.NameTextBox.Name = "NameTextBox"
-        Me.NameTextBox.Size = New System.Drawing.Size(95, 20)
-        Me.NameTextBox.TabIndex = 2
-        '
-        'WeeklySalesTextBox
-        '
-        Me.WeeklySalesTextBox.Location = New System.Drawing.Point(144, 43)
-        Me.WeeklySalesTextBox.Name = "WeeklySalesTextBox"
-        Me.WeeklySalesTextBox.Size = New System.Drawing.Size(95, 20)
-        Me.WeeklySalesTextBox.TabIndex = 3
         '
         'TotalPayLabel
         '

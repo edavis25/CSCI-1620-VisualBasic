@@ -8,10 +8,10 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("CSCI1620Lab4A")> 
+<Assembly: AssemblyTitle("R 'n R - For Reading 'n Refreshment")> 
 <Assembly: AssemblyDescription("")> 
 <Assembly: AssemblyCompany("")> 
-<Assembly: AssemblyProduct("CSCI1620Lab4A")> 
+<Assembly: AssemblyProduct("CSCI1620Lab6A")> 
 <Assembly: AssemblyCopyright("Copyright ©  2015")> 
 <Assembly: AssemblyTrademark("")> 
 

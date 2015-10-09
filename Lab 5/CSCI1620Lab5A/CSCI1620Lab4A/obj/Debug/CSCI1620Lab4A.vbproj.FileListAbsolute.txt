@@ -42,3 +42,14 @@ C:\Users\ericrocksmyworld\Documents\GitHub\CSCI-1620-VisualBasic\Lab 5\CSCI1620L
 C:\Users\ericrocksmyworld\Documents\GitHub\CSCI-1620-VisualBasic\Lab 5\CSCI1620Lab5A\CSCI1620Lab4A\obj\Debug\CSCI1620Lab4A.eadfrmmain.resources
 C:\Users\ericrocksmyworld\Documents\GitHub\CSCI-1620-VisualBasic\Lab 5\CSCI1620Lab5A\CSCI1620Lab4A\obj\Debug\CSCI1620Lab4A.Resources.resources
 C:\Users\ericrocksmyworld\Documents\GitHub\CSCI-1620-VisualBasic\Lab 5\CSCI1620Lab5A\CSCI1620Lab4A\obj\Debug\CSCI1620Lab4A.vbproj.GenerateResource.Cache
+C:\Users\KingEricc\Documents\GitHub\CSCI-1620-VisualBasic\Lab 5\CSCI1620Lab5A\CSCI1620Lab4A\bin\Debug\CSCI1620Lab4A.exe.config
+C:\Users\KingEricc\Documents\GitHub\CSCI-1620-VisualBasic\Lab 5\CSCI1620Lab5A\CSCI1620Lab4A\obj\Debug\CSCI1620Lab4A.exe
+C:\Users\KingEricc\Documents\GitHub\CSCI-1620-VisualBasic\Lab 5\CSCI1620Lab5A\CSCI1620Lab4A\obj\Debug\CSCI1620Lab4A.xml
+C:\Users\KingEricc\Documents\GitHub\CSCI-1620-VisualBasic\Lab 5\CSCI1620Lab5A\CSCI1620Lab4A\obj\Debug\CSCI1620Lab4A.pdb
+C:\Users\KingEricc\Documents\GitHub\CSCI-1620-VisualBasic\Lab 5\CSCI1620Lab5A\CSCI1620Lab4A\bin\Debug\CSCI1620Lab4A.exe
+C:\Users\KingEricc\Documents\GitHub\CSCI-1620-VisualBasic\Lab 5\CSCI1620Lab5A\CSCI1620Lab4A\bin\Debug\CSCI1620Lab4A.pdb
+C:\Users\KingEricc\Documents\GitHub\CSCI-1620-VisualBasic\Lab 5\CSCI1620Lab5A\CSCI1620Lab4A\bin\Debug\CSCI1620Lab4A.xml
+C:\Users\KingEricc\Documents\GitHub\CSCI-1620-VisualBasic\Lab 5\CSCI1620Lab5A\CSCI1620Lab4A\obj\Debug\CSCI1620Lab4A.vbprojResolveAssemblyReference.cache
+C:\Users\KingEricc\Documents\GitHub\CSCI-1620-VisualBasic\Lab 5\CSCI1620Lab5A\CSCI1620Lab4A\obj\Debug\CSCI1620Lab4A.eadfrmmain.resources
+C:\Users\KingEricc\Documents\GitHub\CSCI-1620-VisualBasic\Lab 5\CSCI1620Lab5A\CSCI1620Lab4A\obj\Debug\CSCI1620Lab4A.Resources.resources
+C:\Users\KingEricc\Documents\GitHub\CSCI-1620-VisualBasic\Lab 5\CSCI1620Lab5A\CSCI1620Lab4A\obj\Debug\CSCI1620Lab4A.vbproj.GenerateResource.Cache

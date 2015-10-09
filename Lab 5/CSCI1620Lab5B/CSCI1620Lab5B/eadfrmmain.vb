@@ -5,7 +5,7 @@
 ' Description:
 '   Commission calculator. If the salesperson hits a predetermined quota,
 '   they receive commission on their sales. This commission is added to a base
-'   pay given regardless of meeting the quota.
+'   pay that is given regardless of meeting the quota.
 
 Public Class eadfrmmain
 
@@ -50,7 +50,7 @@ Public Class eadfrmmain
 
         Catch WeeklySalesException As Exception
             ' Catches any errors from user entry into the Weekly Sales textbox.
-            MessageBox.Show("Weekly sales entry must be a numeric.", "Data Entry Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+            MessageBox.Show("Weekly sales entry must be numeric.", "Data Entry Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
             With WeeklySalesTextBox
                 .Focus()
                 .SelectAll()
@@ -129,5 +129,9 @@ Public Class eadfrmmain
         MessageString = "Commission Calculator" & Environment.NewLine & "Programmed By: Eric A Davis"
 
         MessageBox.Show(MessageString, "About Commission Calculator", MessageBoxButtons.OK, MessageBoxIcon.Information)
+    End Sub
+
+    Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
+        Close()
     End Sub
 End Class
