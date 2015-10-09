@@ -8,6 +8,11 @@
 
 Public Class eadfrmmain
 
+    'Global Level Shared Variables for All Forms
+    Friend CustomerCountInteger As Integer
+    Friend GrandTotalDecimal, AverageDecimal As Decimal
+
+
     ' Global Level Declarations for the Constants
     'These specify the pricing for Tax and each type of coffee
     Const TAX_RATE_DECIMAL As Decimal = 0.08D
@@ -16,10 +21,9 @@ Public Class eadfrmmain
     Const LATTE_PRICE_DECIMAL As Decimal = 1.75D
     Const ICED_PRICE_DECIMAL As Decimal = 2.5D
 
-    ' Global Level Declarations for the Variables
     ' Accumulators + Counters for the summary info
-    Private SubtotalDecimal, TotalDecimal, GrandTotalDecimal As Decimal
-    Private CustomerCountInteger As Integer
+    Private SubtotalDecimal, TotalDecimal As Decimal
+
 
 
     Private Sub CalculateButton_Click(sender As Object, e As EventArgs) Handles CalculateButton.Click, CalculateSelectionToolStripMenuItem.Click
@@ -163,7 +167,6 @@ Public Class eadfrmmain
         ' Calculate and Display the total results from all orderes entered by the user.
 
         ' *** Local Level Variables:
-        Dim AverageDecimal As Decimal
         Dim MessageString As String
 
         ' If test to make sure last order gets added to total
@@ -176,16 +179,8 @@ Public Class eadfrmmain
         If CustomerCountInteger > 0 Then
             AverageDecimal = GrandTotalDecimal / CustomerCountInteger
 
-            ' Concatenate and place prompts and data into "MessageString" variable.
-            ' Just puts all this clutter into one variable to display with the following message box.
-            MessageString = "Number of Orders:  " & CustomerCountInteger.ToString() _
-                & Environment.NewLine & Environment.NewLine _
-                & "Total Sales:  " & GrandTotalDecimal.ToString("C") _
-                & Environment.NewLine & Environment.NewLine _
-                & "Average Sale:  " & AverageDecimal.ToString("C")
-
-            ' Show the Message Box with summary information. Uses above Message String
-            MessageBox.Show(MessageString, "Coffee Sales Summary", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            ' Show the Summary Form
+            SummaryForm.ShowDialog()
 
         Else
             MessageString = "No sales data to summarize."
@@ -226,13 +221,9 @@ Public Class eadfrmmain
     End Sub
 
     Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
-        ' Display an About message box.  
-        ' Sets the text into a variable for cleanliness.
-        Dim MessageString As String
+        ' Display a defaulty About Form with info from Assembly Information.
+        AboutBox1.ShowDialog()
 
-        MessageString = "R 'n R Billing" & Environment.NewLine & Environment.NewLine & _
-            "Programmed By: Eric A Davis"
-        MessageBox.Show(MessageString, "About R 'n R Billing", MessageBoxButtons.OK, MessageBoxIcon.Information)
     End Sub
 
    
