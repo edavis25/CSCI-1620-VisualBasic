@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CSCI1620Lab6B", "CSCI1620Lab6B\CSCI1620Lab6B.vbproj", "{111B3D24-4836-4C66-83DC-BC2DE6557F49}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CSCI1620Lab6B", "CSCI1620Lab6B\CSCI1620Lab6B.vbproj", "{FB88CE22-7470-47F6-AEAB-AF13F514BDF7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{111B3D24-4836-4C66-83DC-BC2DE6557F49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{111B3D24-4836-4C66-83DC-BC2DE6557F49}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{111B3D24-4836-4C66-83DC-BC2DE6557F49}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{111B3D24-4836-4C66-83DC-BC2DE6557F49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB88CE22-7470-47F6-AEAB-AF13F514BDF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB88CE22-7470-47F6-AEAB-AF13F514BDF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB88CE22-7470-47F6-AEAB-AF13F514BDF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB88CE22-7470-47F6-AEAB-AF13F514BDF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{111B3D24-4836-4C66-83DC-BC2DE6557F49}</ProjectGuid>
+    <ProjectGuid>{FB88CE22-7470-47F6-AEAB-AF13F514BDF7}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <StartupObject>CSCI1620Lab6B.My.MyApplication</StartupObject>
     <RootNamespace>CSCI1620Lab6B</RootNamespace>
@@ -45,6 +45,9 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -70,11 +73,35 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="AboutBox1.Designer.vb">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutBox1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="eadfrmmain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eadfrmmain.Designer.vb">
+      <DependentUpon>eadfrmmain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen1.Designer.vb">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SummaryForm.Designer.vb">
+      <DependentUpon>SummaryForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SummaryForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JobInformationForm.Designer.vb">
+      <DependentUpon>JobInformationForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="JobInformationForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -94,14 +121,30 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eadfrmmain.resx">
+      <DependentUpon>eadfrmmain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobInformationForm.resx">
+      <DependentUpon>JobInformationForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryForm.resx">
+      <DependentUpon>SummaryForm.vb</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

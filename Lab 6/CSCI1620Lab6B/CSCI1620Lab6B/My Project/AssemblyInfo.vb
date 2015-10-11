@@ -8,17 +8,17 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("CSCI1620Lab6B")> 
-<Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("")> 
-<Assembly: AssemblyProduct("CSCI1620Lab6B")> 
+<Assembly: AssemblyTitle("Pat's Auto Repair")> 
+<Assembly: AssemblyDescription("Cost calculator for Pat's Auto Repair. Takes user inputs for labor hours and parts cost and adds them to a total sales summary.")> 
+<Assembly: AssemblyCompany("Eric A Davis")> 
+<Assembly: AssemblyProduct("CSCI-1620 Lab 6B")> 
 <Assembly: AssemblyCopyright("Copyright ©  2015")> 
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("8e6aef13-540d-43a9-9a7a-3fc8338768c2")> 
+<Assembly: Guid("46015a93-acad-4850-ba07-e259acdae037")> 
 
 ' Version information for an assembly consists of the following four values:
 '
