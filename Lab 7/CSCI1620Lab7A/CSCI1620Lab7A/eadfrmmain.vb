@@ -198,4 +198,9 @@
             e.Graphics.DrawString(PrintLineString, PrintFont, Brushes.Black, HorizontalPrintLocationSingle, VerticalPrintLocationSingle)
         Next ListIndexInteger
     End Sub
+
+    Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
+        ' Exit menu item click event.
+        Close()
+    End Sub
 End Class
