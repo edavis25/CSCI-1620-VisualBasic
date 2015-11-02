@@ -97,13 +97,13 @@ Partial Class eadfrmmain
         'PrintAllToolStripMenuItem
         '
         Me.PrintAllToolStripMenuItem.Name = "PrintAllToolStripMenuItem"
-        Me.PrintAllToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.PrintAllToolStripMenuItem.Size = New System.Drawing.Size(132, 22)
         Me.PrintAllToolStripMenuItem.Text = "&Print All"
         '
         'PreviewAllToolStripMenuItem
         '
         Me.PreviewAllToolStripMenuItem.Name = "PreviewAllToolStripMenuItem"
-        Me.PreviewAllToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.PreviewAllToolStripMenuItem.Size = New System.Drawing.Size(132, 22)
         Me.PreviewAllToolStripMenuItem.Text = "Pre&view All"
         '
         'ToolStripSeparator1
