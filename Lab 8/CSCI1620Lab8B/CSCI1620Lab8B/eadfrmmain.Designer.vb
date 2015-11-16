@@ -121,7 +121,7 @@ Partial Class eadfrmmain
         Me.AcceptButton = Me.DistanceButton
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.CancelButton = Me.ExitButton
+        Me.CancelButton = Me.ClearButton
         Me.ClientSize = New System.Drawing.Size(297, 161)
         Me.Controls.Add(Me.ExitButton)
         Me.Controls.Add(Me.ClearButton)
